@@ -137,7 +137,6 @@ html {
     width: 100%;
     height: 100%;
     background-size: cover;
-    object-fit: cover;
     background-position: 50% 50%;
 
 }
@@ -270,7 +269,6 @@ main {
     flex-basis: 100%;
     background-repeat: no-repeat;
     background-size: cover;
-    object-fit: cover;
     background-position: 0% 50%;
     cursor: pointer;
 }
