@@ -1,0 +1,1033 @@
+@font-face {
+    font-family: "open sans regular";
+    src: url(./fonts/OpenSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: "open sans medium";
+    src: url(./fonts/OpenSans-Medium.ttf);
+}
+
+@font-face {
+    font-family: "open sans SemiBold";
+    src: url(./fonts/OpenSans-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: "open sans Bold";
+    src: url(./fonts/OpenSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: "roboto regular";
+    src: url(./fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: "ubuntu Bold";
+    src: url(./fonts/Ubuntu-Bold.ttf);
+}
+
+@font-face {
+    font-family: "ubuntu regular";
+    src: url(./fonts/Ubuntu-Regular.ttf);
+}
+
+@font-face {
+    font-family: "montserrat Bold";
+    src: url(./fonts/Montserrat-Bold.ttf);
+}
+
+
+
+
+
+/* ------------------------------------------ */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    padding: 0;
+    margin: 0;
+}
+
+/* ------------------------------------------ */
+.container {
+    margin: 0 auto;
+    max-width: 1140px;
+    /* overflow: hidden; */
+}
+
+/* ---------------Header Start--------------- */
+/* Nav */
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0.5rem;
+}
+
+.header-top__imgbox {
+    max-width: 64px;
+}
+
+.header-top__img {
+    width: 100%;
+}
+
+.menu {
+    flex-basis: 30%;
+}
+
+.menu__bars {
+    display: none;
+    cursor: pointer;
+}
+
+.menu__bars:hover {
+    color: #db545a;
+}
+
+.menu__items {
+    display: flex;
+    justify-content: space-around;
+    flex-basis: 30%;
+
+}
+
+.menu__times {
+    display: none;
+    color: #fff;
+    cursor: pointer;
+
+}
+
+.menu__item a {
+    display: flex;
+    flex-basis: 30%;
+    color: #000;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.menu__item a:hover {
+    color: #db545a;
+}
+
+.menu__items .menu__item:first-child a {
+    color: #478ac9;
+}
+
+.menu__text {
+    text-transform: capitalize;
+    font-family: "open sans regular";
+}
+
+/* bottom */
+.header-bottom {
+    margin-top: 0.5rem;
+    height: 39rem;
+    max-height: 50rem;
+    display: flex;
+    background-image: url(./image/top-view-person-writing-laptop-with-copy-space.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    object-fit: cover;
+    background-position: 50% 50%;
+
+}
+
+.header-bottom__wraper {
+    display: flex;
+    justify-content: end;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 6.75rem 0 3.75rem 35rem;
+    flex-wrap: wrap;
+    padding: 0 3rem;
+}
+
+.header-content__title {
+    margin-bottom: 1rem;
+    font-family: "ubuntu Bold";
+    font-size: 3rem;
+}
+
+.header-content__text {
+    margin-bottom: 3rem;
+    font-family: "open sans regular";
+    font-size: 1.1rem;
+    display: flex;
+    line-height: 1.8;
+}
+
+.header-content__srcimg {
+    font-family: "open sans medium";
+    font-size: 1.1rem;
+
+}
+
+.source {
+    color: #f1c50e;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-left: 0.5rem;
+    background-color: inherit;
+}
+
+.source:hover,
+.source:active {
+    color: #d4ad0d;
+}
+
+.header-content__btn {
+    margin-top: 2.5rem;
+    width: 13rem;
+    height: 3.8rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: #f1c50e;
+    font-family: "open sans SemiBold";
+}
+
+.header-content__btn:active,
+.header-content__btn:hover {
+    background-color: #fff;
+}
+
+/* ---------------Header End--------------- */
+
+/* ---------------Main Start--------------- */
+main {
+    margin-top: 3rem;
+}
+
+/* portfolio */
+
+.portfolio {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.portfolio__title {
+    max-width: 43rem;
+    font-weight: 400;
+    font-family: "roboto regular";
+    font-size: 3rem;
+    line-height: 1.2;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.portfolio__text {
+    margin-top: 2.5rem;
+    font-family: "open sans regular";
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+.portfolio__text button {
+    color: #f1c50e;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-left: 0.5rem;
+    font-size: 1rem;
+    background-color: inherit;
+}
+
+.portfolio__imgs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0 1.2rem;
+}
+
+.portfolio__imgbox {
+    background-color: #363636;
+    width: 11.3rem;
+    height: 18rem;
+    margin-top: 0.6rem;
+    display: flex;
+    flex-basis: 22rem;
+    flex-wrap: wrap;
+}
+
+.img {
+    flex-basis: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    background-position: 0% 50%;
+    cursor: pointer;
+}
+
+.img:hover,
+.img:active {
+    opacity: 0.7;
+}
+
+.portfolio__img1 {
+    background-image: url(./image/woman-sitting-desk-checking-reports-talking.jpg);
+}
+
+.portfolio__img2 {
+    background-image: url(./image/person-using-laptop.jpg);
+}
+
+.portfolio__img3 {
+    background-image: url(./image/16758708_rm405-da01-04-mockup.jpg);
+}
+
+.portfolio__img4 {
+    background-image: url(./image/low-angle-shot-facade-white-modern-building-blue-clear-sky.jpg);
+}
+
+.portfolio__img5 {
+    background-image: url(./image/planning-risk-strategy-project-management-business.jpg);
+}
+
+.portfolio__img6 {
+    background-image: url(./image/front-view-smiley-elegant-businesswoman-using-laptop-with-copy-space.jpg);
+
+}
+
+
+/* lifestyle */
+.lifestyle {
+    margin-top: 11rem;
+
+}
+
+.lifestyle-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 3rem;
+}
+
+.lifestyle-content__imgbox {
+    flex-basis: 28rem;
+    padding: 0 1.8rem;
+    background: linear-gradient(to bottom, #f1c50e, #db545a);
+    border-radius: 3.1rem;
+    max-height: 29rem;
+}
+
+.lifestyle-content__img {
+    width: 100%;
+    margin: -4.35rem auto 0;
+}
+
+.lifestyle-content__wraper {
+    flex-basis: 33rem;
+    padding: 3rem 0;
+}
+
+.lifestyle-content__title {
+    font-family: "ubuntu Bold";
+    font-size: 2.2rem;
+    max-width: 25rem;
+    margin-bottom: 2rem;
+}
+
+.lifestyle-content__text {
+    font-family: "ubuntu regular";
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    line-height: 2.2rem;
+}
+
+.lifestyle-content__srcimg {
+    font-family: "open sans regular";
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.lifestyle-content__srcimg button {
+    color: #db545a !important;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-left: 0.5rem;
+    font-size: 1rem;
+    background-color: inherit;
+}
+
+.lifestyle-content__btn {
+    margin-top: 1rem;
+    width: 13rem;
+    height: 3.8rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: #f1c50e;
+    font-family: "open sans SemiBold";
+    border-radius: 0.6rem;
+}
+
+.lifestyle-content__btn:active,
+.lifestyle-content__btn:hover {
+    background-color: #478ac9;
+}
+
+/* operation */
+
+.operation {
+    margin-top: 10rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.operation__title {
+    max-width: 38rem;
+    font-weight: 400;
+    font-family: "roboto regular";
+    font-size: 3rem;
+    line-height: 1.2;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.operation__text {
+    margin-top: 2.5rem;
+    font-family: "open sans regular";
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+.operation__text button {
+    color: #f1c50e;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-left: 0.5rem;
+    font-size: 1rem;
+    background-color: inherit;
+}
+
+.operation__imgs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0 1.2rem;
+}
+
+.operation__imgbox {
+    background-color: #363636;
+    width: 11.3rem;
+    height: 18rem;
+    margin-top: 0.6rem;
+    display: flex;
+    flex-basis: 22rem;
+    flex-wrap: wrap;
+}
+
+.operation__img1 {
+    background-image: url(./image/pexels-photo-3972379.jpeg );
+}
+
+.operation__img2 {
+    background-image: url(./image/woman-posing-with-cup-coffee-her-workplace-chinese-student-blue-shirt-works-with-document-campus-with-blonde-friend-glasses.jpg);
+}
+
+.operation__img3 {
+    background-image: url(./image/business-people-meeting.jpg);
+}
+
+.operation__img4 {
+    background-image: url(./image/businesspeople-working-finance-accounting-analyze-financi.jpg);
+}
+
+.operation__img5 {
+    background-image: url(./image/pexels-photo-911758.jpeg);
+}
+
+.operation__img6 {
+    background-image: url(./image/pexels-burst-374820.jpg);
+}
+
+
+/* ---------------Main End--------------- */
+
+/* ---------------Footer Start--------------- */
+/* newletters */
+footer {
+    margin-top: 4rem;
+}
+
+.newletters {
+    background-color: #478ac9;
+}
+
+.newletters-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    color: #fff;
+    padding: 4.5rem 0;
+}
+
+.newletters-content__txtwraper {
+    flex-basis: 55%;
+}
+
+.newletters-content__title {
+    font-family: "ubuntu Bold";
+    font-size: 2.25rem;
+    margin-bottom: 1rem;
+}
+
+.newletters-content__text {
+    font-family: "open sans regular";
+    font-size: 1.1rem;
+    line-height: 1.7rem;
+}
+
+.newletters-content__btnwraper {
+    flex-basis: 32%;
+    margin-top: 2.5rem;
+
+}
+
+.newletters-content__btn {
+    margin-top: 1rem;
+    width: 13rem;
+    height: 3.8rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: #f1c50e;
+    font-family: "open sans Bold";
+    border-radius: 0.6rem;
+}
+
+.newletters-content__btn:hover,
+.newletters-content__btn :active {
+    background-color: #d4ad0d;
+}
+
+.newletters-content__contact {
+    flex-basis: 50%;
+    margin-top: 5rem;
+    padding: 0 2.2rem;
+}
+
+.newletters-content__address {
+    font-family: "open sans regular";
+    font-size: 1.25rem;
+}
+
+.newletters-content__number {
+    margin-top: 4rem;
+    font-family: "montserrat Bold";
+    font-size: 1.5rem;
+}
+
+.newletters-content__compayEmail {
+    color: #f1c50e;
+    margin-top: 0.2rem;
+    font-family: "montserrat Bold";
+    font-size: 1.25rem;
+}
+
+.newletters-content__signup {
+    flex-basis: 47%;
+    margin-top: 5rem;
+    padding: 0 1rem;
+}
+
+.newletters-content__emailbox {
+    margin-top: 2rem;
+    display: flex;
+
+}
+
+.newletters-content__email {
+    flex-basis: 80%;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-family: "open sans regular";
+
+}
+
+.newletters-content__submit {
+    flex-basis: 20%;
+    margin-left: 0.5rem;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    background-color: #f1c50e;
+    font-family: "open sans Bold";
+    font-size: 0.9rem;
+}
+
+.newletters-content__submit:hover,
+.newletters-content__submit:active {
+    background-color: #d4ad0d;
+}
+
+.end {
+    margin-top: 5rem;
+    background: #000;
+    padding: 3rem;
+    text-align: center;
+}
+
+.end__text {
+    font-family: "open sans regular";
+    font-size: 0.8rem;
+    color: #fff;
+
+}
+
+/* ---------------Footer End--------------- */
+
+
+
+
+
+/* ------------------------------------------ */
+@media only screen and (max-width: 1200px) {
+    .container {
+        max-width: 930px;
+    }
+
+    .header-bottom {
+        height: 35.5rem;
+    }
+
+    .header-bottom {
+        background-position: 40% 50%;
+    }
+
+    .header-content {
+        margin: 6.75rem 0 3.75rem 24rem;
+        padding: 0 1rem 0 3rem;
+
+    }
+
+    .portfolio__imgs {
+        padding: 0;
+    }
+
+    .portfolio__imgbox {
+        flex-basis: 19rem;
+        margin-top: 0.3rem;
+    }
+
+    .lifestyle-content {
+        padding: 0 1rem;
+    }
+
+    .lifestyle-content__imgbox {
+        flex-basis: 26rem;
+        padding: 0 0.8rem;
+
+    }
+
+    .lifestyle-content__img {
+        margin: -4.4rem auto 0;
+    }
+
+    .lifestyle-content__wraper {
+        flex-basis: 26rem;
+        padding: 4rem 0;
+    }
+
+    .operation__imgs {
+        padding: 0;
+    }
+
+    .operation__imgbox {
+        flex-basis: 19rem;
+        margin-top: 0.4rem;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .container {
+        max-width: 920px;
+    }
+
+    .navigation {
+        padding: 1rem 0rem;
+    }
+
+    .menu__bars {
+        display: block;
+        margin-left: 85%;
+        font-size: 1.7rem;
+    }
+
+    .menu__items {
+        opacity: 0.9;
+        transition: 0.7s all;
+        position: fixed;
+        top: 0;
+        left: -208px;
+        flex-direction: column;
+        background-color: #000;
+        height: 100%;
+        width: 13rem;
+        padding: 3rem 1rem;
+        align-items: center;
+        justify-content: start;
+        z-index: 1;
+    }
+
+    .menu__times {
+        display: block;
+    }
+
+    .menu__times {
+        display: block;
+        position: absolute;
+        right: 16px;
+        top: 16px;
+        font-size: 2rem;
+    }
+
+    .menu__item {
+        margin-top: 1.5rem;
+    }
+
+    .menu__item a {
+        font-size: 1.5rem;
+        color: #fff;
+    }
+
+    .menu__item a:hover {
+        color: #7B7B7B;
+    }
+
+    .header-bottom {
+        background-position: 60% 50%;
+    }
+
+    .header-content {
+        margin: 6.75rem 0 3.75rem 0rem;
+        flex-basis: 29rem;
+    }
+
+    .portfolio__imgs {
+        justify-content: space-evenly;
+    }
+
+    .portfolio__imgbox {
+        flex-basis: 24rem;
+        margin-top: 0.7rem;
+    }
+
+    .lifestyle-content__imgbox {
+        flex-basis: 23rem;
+        height: 27rem;
+        margin-right: 1.5rem;
+    }
+
+    .lifestyle-content__img {
+        margin: -2.2rem auto 0;
+    }
+
+    .lifestyle-content__wraper {
+        flex-basis: 46%;
+        padding: 1rem 0;
+    }
+
+    .operation__imgs {
+        justify-content: space-evenly;
+    }
+
+    .operation__imgbox {
+        flex-basis: 24rem;
+        margin-top: 0.7rem;
+    }
+
+    .newletters-content__contact {
+        flex-basis: 46%;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        max-width: 540px;
+    }
+
+
+    .header-content {
+        align-items: center;
+        margin: 4.75rem 0 3.75rem 0rem;
+        flex-basis: 31rem;
+    }
+
+    .portfolio__title {
+        font-size: 2.2rem;
+    }
+
+    .portfolio__imgbox {
+        flex-basis: 25rem;
+        height: 14rem;
+    }
+
+    .lifestyle-content {
+        flex-direction: column;
+        padding: 0 4rem;
+        margin-right: 0;
+    }
+
+    .lifestyle-content__imgbox {
+        flex-basis: 21rem;
+        height: 18rem;
+        margin-right: 4.5rem;
+        padding: 0 1.8rem;
+    }
+
+    .lifestyle-content__img {
+        margin: -3.1rem auto 0;
+    }
+
+    .operation {
+        margin-top: 7rem;
+}
+
+    .operation__title {
+        font-size: 2rem;
+    }
+
+    .portfolio__imgbox {
+        flex-basis: 25rem;
+        height: 14rem;
+    }
+
+    .newletters-content {
+        flex-direction: column;
+    }
+
+    .newletters-content__btnwraper {
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+@media only screen and (max-width: 576px) {
+    .container {
+        max-width: 100%;
+    }
+
+    .navigation {
+        padding: 1rem;
+    }
+    
+    .menu__items {
+        width: 9rem;
+    }
+
+    .menu__times {
+        font-size: 1.5rem;
+    }
+
+    .menu__item a {
+        font-size: 1.2rem;
+
+    }
+
+    .header-bottom {
+        background-position: 35% 50%;
+        height: 32.5rem;
+    }
+
+
+    .header-content__title {
+        font-size: 2rem;
+    }
+
+    .header-content__text {
+        margin-bottom: 2rem;
+        font-size: 0.9rem;
+    }
+
+    .header-content__srcimg {
+        font-size: 0.9rem;
+    }
+
+    .header-content__btn {
+        margin-top: 2.5rem;
+        width: 10rem;
+        height: 3.2rem;
+    }
+
+    .menu__bars {
+        margin-left: 75%;
+    }
+
+    .header-bottom {
+        background-position: 45% 50%;
+    }
+
+    .header-content {
+        margin: 2rem 0 3.75rem 0rem;
+    }
+
+    .portfolio__title {
+        width: 22rem;
+        font-size: 1.9rem;
+    }
+
+    .portfolio__imgbox {
+        flex-basis: 23rem;
+        height: 14rem;
+    }
+
+    .lifestyle-content {
+        padding: 0 2rem;
+        align-items: center;
+    }
+
+    .lifestyle-content__imgbox {
+        width: 22rem;
+        padding: 0px 1.9rem;
+    }
+
+    .lifestyle-content__img {
+        margin: -3.9rem auto 0;
+    }
+
+    .operation__title {
+        width: 22rem;
+        font-size: 1.9rem;
+    }
+
+    .operation__imgbox {
+        flex-basis: 23rem;
+        height: 14rem;
+    }
+
+    .newletters-content__txtwraper {
+        padding: 0 0.5rem;
+    }
+
+    .newletters-content__title {
+        font-size: 1.5rem;
+    }
+
+    .newletters-content__emailbox {
+        flex-direction: column;
+    }
+
+    .newletters-content__email {
+        margin-bottom: 1rem;
+        flex-basis: 3rem;
+    }
+
+    .newletters-content__submit {
+        flex-basis: 2.5rem;
+    }
+
+}
+
+@media screen and (max-width:425px) {
+    .portfolio__title {
+        width: 18rem;
+        font-size: 1.5rem;
+    }
+
+    .portfolio__imgbox {
+        flex-basis: 16rem;
+        height: 12rem;
+    }
+
+    .lifestyle-content__imgbox {
+        flex-basis: 16rem;
+        height: 16rem;
+        width: 15rem;
+        padding: 0 0 0 1.2rem;
+    }
+
+    .lifestyle-content__img {
+        margin: -2.9rem auto 0;
+    }
+
+    .lifestyle-content__wraper {
+        width: 17rem;
+    }
+
+    .lifestyle-content__title {
+        font-size: 1.5rem;
+        margin-bottom: 1.2rem;
+    }
+
+    .lifestyle-content__text {
+        font-size: 0.9rem;
+    }
+
+    .lifestyle-content__srcimg {
+        font-size: 0.9rem;
+    }
+
+    .lifestyle-content__btn {
+        width: 10rem;
+        height: 3.2rem;
+    }
+
+    .operation__title {
+        width: 18rem;
+        font-size: 1.5rem;
+    }
+
+    .operation__imgbox {
+        flex-basis: 16rem;
+        height: 12rem;
+    }
+
+    .newletters-content__txtwraper {
+        padding: 0 0 0 0.7rem;
+    }
+
+    .newletters-content__text {
+        font-size: 0.9rem;
+    }
+
+    .newletters-content__contact {
+        padding: 0 0 0 0.5rem;
+    }
+
+    .newletters-content__address {
+        font-size: 1.1rem;
+    }
+
+    .newletters-content__number {
+        font-size: 1.3rem;
+    }
+
+    .newletters-content__compayEmail {
+        font-size: 1rem;
+    }
+
+    .newletters-content__email {
+        margin-bottom: 1rem;
+        flex-basis: 2.5rem;
+    }
+
+    .newletters-content__submit {
+        flex-basis: 2rem;
+    }
+
+}
